@@ -1,0 +1,102 @@
+.contacto {
+    max-width: 1000px;
+    min-width: 360px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.contacto form {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 10px;
+    background-color: #e4c288;
+    border-radius: 10px;
+    height: 500px;
+}
+
+.contacto form input {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    border: transparent;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.contacto form #btenv:hover {
+    background-color: chocolate;
+}
+
+.contacto form label {
+    font-size: 24px;
+    font: bolder;
+    text-transform: uppercase;
+}
+
+.contacto form #tft {
+    width: 90%;
+    font-size: 18px;
+    border-radius: 5px;
+    border: transparent;
+    padding: 10px;
+    font-size: 18px;
+    resize: none;
+}
+
+.pregunta {
+    width: 500px;
+    height: fit-content;
+}
+
+.pregunta .acor {
+    background-color: #e4c288;
+    padding: 10px 30px;
+    border: 1px black solid;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: background-color 1s;
+}
+
+.pregunta .acor:hover {
+    background-color: rgb(218, 135, 28);
+    transition: 1s;
+}
+
+.pregunta .info {
+    padding: 5px 20px;
+    width: 100%;
+    height: fit-content;
+    text-align: justify;
+    display: none;
+
+}
+
+@media screen and (max-width:390px) {
+    .contacto {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .contacto form {
+        width: 360px;
+    }
+
+    .contacto .pregunta {
+        width: 380px;
+    }
+
+    .pregunta .acor {
+        width: 95%;
+    }
+
+    .pregunta .info {
+        width: 95%;
+    }
+}

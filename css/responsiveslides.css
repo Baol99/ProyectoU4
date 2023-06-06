@@ -1,0 +1,174 @@
+/*! http://responsiveslides.com v1.55 by @arielsalminen */
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+
+/***********************************************/
+
+/* Tiny Carousel */
+.acordion .inf {
+    max-width: 1200px;
+    padding: 10px 50px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.acordion .inf .viewport {
+    height: 95%;
+    overflow: hidden;
+    position: relative;
+}
+
+.acordion .inf .flecha {
+    font-size: 35px;
+}
+
+.acordion .inf .buttons {
+    display: block;
+    position: absolute;
+    top: 48%;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.acordion .inf .next {
+    right: 0;
+    left: auto;
+    top: 48%;
+}
+
+.acordion .inf .buttons:hover {
+    color: #fff;
+    background: #885a0b;
+}
+
+.acordion .inf .disable {
+    visibility: hidden;
+}
+
+/*************Slider*******************/
+
+.acordion .inf .overview {
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.acordion .inf .overview li {
+    float: left;
+    margin: 0 20px 0 8px;
+    padding: 1px;
+    height: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.acordion .inf .overview li figure {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.acordion .inf .overview li figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.acordion .inf .overview li figure:hover .infimg {
+    top: 10%;
+    transition: 1.2s;
+}
+
+.acordion .inf .overview li .infimg {
+    background-color: rgba(255, 255, 255, .4);
+    width: 95%;
+    height: 80%;
+    position: absolute;
+    top: 100%;
+    left: 2%;
+    transition: top 2s;
+}
+
+.acordion .inf .overview li .infimg h2 {
+    margin: 10px 0 0 0;
+}
+
+.acordion .inf .overview li .infimg p {
+    text-align: justify;
+    padding: 5px 20px;
+}
+
+.acordion .inf .overview .infimg .btnNegro {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #e4c288;
+    border-radius: 15px;
+}
+
+.acordion .inf .overview li .infimg .btnNegro:hover {
+    background-color: #885a0b;
+}
+
+@media screen and (max-width:390px) {
+    .acordion .inf {
+        width: 380px;
+        padding: 10px 35px;
+    }
+
+    .acordion .inf .viewport {
+        width: 310px;
+    }
+
+    .acordion .inf .overview ul {
+        width: 100%;
+    }
+
+    .acordion .inf .overview li {
+        margin: 0 5px;
+        width: 300px;
+    }
+
+}

@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mid {
+    width: 1200px;
+    margin: auto;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+body h1 {
+    text-align: center;
+}
+
+#subir {
+    font-size: 40px;
+    position: fixed;
+    z-index: 9999;
+    bottom: 15px;
+    right: 15px;
+    background-color: #e4c288;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+/***********HEADER*******************/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.hd {
+    width: 100%;
+    background-color: #e4c288;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.hd .redes {
+    display: flex;
+    gap: 5px;
+}
+
+.hd .redes i:hover {
+    color: #777777;
+}
+
+.hd .tel a:hover {
+    color: rgb(19, 182, 128);
+}
+
+.hd .redes #inst:hover {
+    color: white;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.hd .redes #fb:hover {
+    color: #3b5998;
+}
+
+.hd .redes #tt:hover {
+    color: #1D9BF0;
+}
+
+.hd #btnmenu {
+    display: none;
+}
+
+.hd .menumovil {
+    display: none;
+}
+
+/*************MENU****************/
+.menu {
+    width: 100%;
+    position: sticky;
+    top: 12.7%;
+    z-index: 9999;
+    /*clip-path: polygon(19% 100%, 79% 100%, 100% 0, 0 0);*/
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+    gap: 20px;
+    height: 50px;
+    background-color: #e4c288;
+}
+
+.menu ul li a:hover {
+    color: cadetblue;
+}
+
+/********************************************/
+.acordion .barras {
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 30px;
+    border: 1px black solid;
+    margin: 20px auto;
+}
+
+.acordion .barras i {
+    transform: rotate(180deg);
+    font-size: 24px;
+    color: black;
+}
+
+/*.acordion #inf {
+    display: none;
+}*/
+
+.rotar {
+    transform: rotate(180deg);
+    transition: all .5s;
+}
+
+/********FOOTER************/
+footer {
+    height: auto;
+    background-color: #b6b6b6;
+    padding: 10px 20px;
+    margin-top: 20px auto;
+}
+
+footer .cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .cont .horas a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+footer .cont .Suscribirse #txtsus {
+    width: 200px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+footer .cont .Suscribirse #sus {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+}
+
+@media screen and (max-width:390px) {
+    .mid {
+        width: 380px;
+    }
+}

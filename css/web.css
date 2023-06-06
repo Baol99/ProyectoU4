@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mid {
+    width: 1200px;
+    margin: auto;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: #E3E3E3;
+}
+
+#subir {
+    font-size: 40px;
+    position: fixed;
+    z-index: 9999;
+    bottom: 15px;
+    right: 15px;
+    background-color: #e4c288;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+/***********HEADER*******************/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.hd {
+    width: 100%;
+    background-color: #e4c288;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.hd .redes {
+    display: flex;
+    gap: 5px;
+}
+
+.hd .redes i:hover {
+    color: #777777;
+}
+
+.hd .tel a:hover {
+    color: rgb(19, 182, 128);
+}
+
+.hd .redes #inst:hover {
+    color: white;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.hd .redes #fb:hover {
+    color: #3b5998;
+}
+
+.hd .redes #tt:hover {
+    color: #1D9BF0;
+}
+
+.hd #btnmenu {
+    display: none;
+}
+
+.hd .menumovil {
+    display: none;
+}
+
+/*************MENU****************/
+.menu {
+    width: 100%;
+    position: sticky;
+    top: 12.7%;
+    z-index: 1001;
+    /*clip-path: polygon(19% 100%, 79% 100%, 100% 0, 0 0);*/
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+    gap: 20px;
+    height: 50px;
+    background-color: #e4c288;
+}
+
+.menu ul li a:hover {
+    color: cadetblue;
+}
+
+/***********Buscador*******************/
+.Book {
+    display: flex;
+    gap: 20px;
+    height: 500px;
+    margin: 40px auto;
+}
+
+.Book .slide {
+    width: 800px;
+    height: 100%;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    position: relative;
+}
+
+.Book form {
+    width: 300px;
+    height: 80%;
+    padding: 10px 20px;
+    background-color: #e4c288;
+    display: flex;
+    flex-direction: column;
+}
+
+.Book form label {
+    font-size: 12px;
+    margin: 8px 0 0 0;
+}
+
+.Book form input,
+.Book form .numeros select {
+    height: 30px;
+}
+
+.Book form .numeros {
+    display: flex;
+    flex-direction: column;
+}
+
+.Book form .numeros select {
+    width: 150px;
+}
+
+.Book form #btnbuscar {
+    margin: 10px auto;
+    width: 200px;
+}
+
+.Book form #btnbuscar:focus {
+    background-color: rgb(207, 117, 43);
+    color: white;
+    transition: 1s ease-in;
+}
+
+/*********VIDEO*********/
+.video {
+    height: 400px;
+    margin: 40px auto;
+}
+
+.video iframe {
+    width: 60%;
+    height: 100%;
+}
+
+.video .acerca {
+    width: 38%;
+    padding: 50px;
+    text-align: justify;
+    float: right;
+    margin: 40px 0 0 10px;
+    background-color: rgba(238, 180, 125, 0.4);
+}
+
+.video .acerca a {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 30px;
+    width: 200px;
+    height: 30px;
+    background-color: rgba(122, 122, 122, 0.4);
+    border-radius: 25px;
+    transition: background-color 1s;
+}
+
+.video .acerca a:hover {
+    background-color: rgba(255, 94, 1, 0.4);
+    color: white;
+    transition: 1s;
+}
+
+/***********CARTAS*************/
+.cuadros {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    height: 300px;
+}
+
+.cuadros .art {
+    width: 280px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid rgba(122, 122, 122, 0.8);
+    box-shadow: 0px 0px 5px #e4c288;
+}
+
+.cuadros .art .ico {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid;
+}
+
+.cuadros .art .ico i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*************PARALLAX*********/
+.pllx {
+    margin: 40px auto;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pllx .imagen {
+    width: 800px;
+    height: 500px;
+    background: url("../img/Chichen.jpg") no-repeat center center fixed;
+    background-position-x: -70px;
+    background-position-y: bottom;
+}
+
+.pllx .texto {
+    width: 320px;
+    padding: 10px 20px;
+    margin: 0px 0 0 20px;
+    text-align: justify;
+}
+
+.pllx .texto h1 {
+    text-align: center;
+}
+
+.pllx .texto a {
+    padding: 10px 30px;
+    background-color: #ac7a25;
+}
+
+/*************Mapa*********/
+.map {
+    text-align: center;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 40px;
+}
+
+/***********Promos***************/
+.promos {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.prom {
+    width: 120px;
+    height: 120px;
+    clip-path: polygon(50% 0%, 67% 26%, 98% 35%, 84% 60%, 79% 91%, 52% 80%, 21% 91%, 21% 58%, 2% 35%, 33% 28%);
+    background-color: #e4c288;
+    text-align: center;
+}
+
+.prom a {
+    padding: 40px 0px;
+}
+
+.prom:hover {
+    background-color: #ac7a25;
+}
+
+.promos .btnmapa {
+    width: 130px;
+    height: 100px;
+    margin: 10px 0;
+    background-color: #e4c288;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.promos .btnmapa:hover {
+    background-color: #ac7a25;
+}
+
+.promos .btnmapa a {
+    padding: 40px 0;
+}
+
+/**********MODAL********************/
+.promocion {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    display: none;
+}
+
+.promocion .anuncio {
+    width: 50%;
+    height: 400px;
+    padding: 10px 30px;
+    background-color: white;
+    text-align: left;
+}
+
+.promocion .anuncio header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.promocion .anuncio header i {
+    font-size: 30px;
+    color: red;
+}
+
+.promocion .anuncio header i:hover {
+    font-size: 30px;
+    color: rgb(112, 3, 3);
+}
+
+.promocion .anuncio img {
+    margin: 10px 120px;
+    width: 350px;
+}
+
+#modal4 .anuncio img {
+    width: 80%;
+}
+
+.promap {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    display: none;
+}
+
+.promap .anuncio {
+    width: 80%;
+    height: 90%;
+    padding: 10px 30px;
+    background-color: white;
+    text-align: left;
+}
+
+#modal4 .anuncio img {
+    margin: 0 30px;
+    width: 90%;
+    height: 85%;
+}
+
+/********FOOTER************/
+footer {
+    height: auto;
+    background-color: #b6b6b6;
+    padding: 10px 20px;
+    margin-top: 20px auto;
+}
+
+footer .cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .cont .horas a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+footer .cont .Suscribirse #txtsus {
+    width: 200px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+footer .cont .Suscribirse #sus {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+}

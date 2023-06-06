@@ -1,0 +1,171 @@
+@media screen and (max-width:390px) {
+    .mid {
+        max-width: 100%;
+    }
+
+    #subir {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .hd {
+        flex-wrap: wrap;
+        position: relative;
+        position: sticky;
+        top: 0;
+    }
+
+    .hd #btnmenu {
+        display: block;
+        order: 4;
+        font-size: 32px;
+    }
+
+    .hd #btnmenuG {
+        display: block;
+        order: 4;
+        font-size: 32px;
+    }
+
+    .hd .logo {
+        order: 2;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hd .menumovil {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        z-index: 4;
+        transition: all 1.2s;
+    }
+
+    .hd .menumovil ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100px;
+        height: fit-content;
+        background-color: #e4c288;
+    }
+
+    .hd .menumovil ul li {
+        border-bottom: 1px solid;
+        width: 100%;
+        height: 30px;
+    }
+
+    .hd .menumovil ul li:first-child {
+        border-top: 1px solid;
+        margin-top: 1px;
+    }
+
+    .hd .menumovil ul li:last-child {
+        border-bottom: none;
+    }
+
+    .hd .menumovil ul li a {
+        height: 100%;
+        width: 100%;
+    }
+
+    .hd .menumovil ul li a:hover {
+        background-color: rgb(238, 48, 1);
+        width: 100%;
+    }
+
+    .hd .menuMG {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        z-index: 4;
+        transition: all 1.2s;
+    }
+
+    .hd nav.abrirmenu {
+        left: 74%;
+        transition: left 1.5s;
+    }
+
+    .Book {
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .Book .slide {
+        width: 100%;
+
+    }
+
+    .Book form {
+        width: 100%;
+    }
+
+    .video {
+        height: fit-content;
+        padding: 0 10px;
+    }
+
+    .video iframe {
+        width: 98%;
+        height: 200px;
+    }
+
+    .video .acerca {
+        width: 98%;
+        float: none;
+        margin: 10px 0;
+    }
+
+    .cuadros {
+        height: fit-content;
+        margin-bottom: 30px;
+    }
+
+    .pllx {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .pllx .imagen {
+        width: 100%;
+        height: 300px;
+        background-position-x: center;
+    }
+
+    footer .cont {
+        flex-wrap: wrap;
+    }
+
+    .map {
+        width: 98%;
+        margin: 20px auto;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .promocion .anuncio {
+        width: 90%;
+    }
+
+    .promocion .anuncio img {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    #modal4 .anuncio img {
+        width: 100%;
+        margin: 0;
+    }
+}

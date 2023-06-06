@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/web.css" />
+    <link rel="stylesheet" href="css/movil.css" />
+    <link rel="stylesheet" href="css/slide.css" />
+    <link rel="stylesheet" href="css/responsiveslides.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <script
+      src="https://kit.fontawesome.com/74d6ebe007.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Hotel Maya</title>
+  </head>
+  <body>
+    <i id="subir" class="fas fa-arrow-circle-up"></i>
+    <header class="hd" id="header">
+      <div class="redes">
+        <p>Follow Us:</p>
+        <a href="https://www.instagram.com/hotelxcaretmexico/" target="_blank">
+          <i class="fa-brands fa-instagram" id="inst"></i>
+        </a>
+        <a href="https://www.facebook.com/hotelxcaretmexico/" target="_blank">
+          <i class="fa-brands fa-facebook-f" id="fb"></i>
+        </a>
+        <a href="https://twitter.com/hotelxcaretmx" target="_blank">
+          <i class="fa-brands fa-twitter" id="tt"></i>
+        </a>
+      </div>
+      <figure class="logo">
+        <a href="index.html">
+          <img src="../img/hoteles-logos.svg" alt="" />
+        </a>
+      </figure>
+      <div class="tel">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+529988813834" target="_blank">+52 998-881-3834</a>
+      </div>
+      <a href="#header" id="btnmenu"><i class="fa-solid fa-bars"></i></a>
+      <nav class="menumovil" id="navMenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#Acerca">About Us</a></li>
+          <li><a href="#Service">Service</a></li>
+          <li><a href="page/galleria.html">Gallery</a></li>
+          <li><a href="/page/contacto.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#Acerca">About Us</a></li>
+        <li><a href="#Service">Service</a></li>
+        <li><a href="page/galleria.html">Gallery</a></li>
+        <li><a href="/page/contacto.html">Contacts</a></li>
+      </ul>
+    </nav>
+    <br />
+    <section class="Book mid">
+      <div class="wow animate__animated animate__backInLeft slide">
+        <ul class="rslides" id="slider4">
+          <li>
+            <img src="img/slide1.jpg" alt="" />
+            <p class="caption">
+              Disfrute su instancia en nuestro hotel y asombrese con el lugar
+            </p>
+            <a href="page/galleria.html" class="hvr-back-pulse btnver"
+              >Ver Cuartos</a
+            >
+          </li>
+          <li>
+            <img src="img/slide2.jpg" alt="" />
+            <p class="caption">
+              Disfrute su instancia en nuestro hotel y asombrese con el lugar
+            </p>
+            <a href="#" class="hvr-back-pulse btnver">Ver Cuartos</a>
+          </li>
+          <li>
+            <img src="img/slide3.jpg" alt="" />
+            <p class="caption">
+              Disfrute su instancia en nuestro hotel y asombrese con el lugar
+            </p>
+            <a href="#" class="hvr-back-pulse btnver">Ver Cuartos</a>
+          </li>
+          <li>
+            <img src="img/slide4.jpg" alt="" />
+            <p class="caption">
+              Disfrute su instancia en nuestro hotel y asombrese con el lugar
+            </p>
+            <a href="#" class="hvr-back-pulse btnver">Ver Cuartos</a>
+          </li>
+        </ul>
+      </div>
+
+      <form
+        class="wow animate__animated animate__backInRight animate__delay-2s"
+      >
+        <h1>Buscar Cuarto</h1>
+        <label for="name">Tu nombre</label>
+        <input
+          type="text"
+          name="nombre"
+          id="name"
+          placeholder="Nombre Completo"
+          required
+        />
+        <label for="fllegada">Llegada</label>
+        <input
+          type="date"
+          name="fllegda"
+          id="fllegada"
+          placeholder="Fecha de Llegada"
+          required
+        />
+        <label for="fsalida">Salida</label>
+        <input
+          type="date"
+          name="fida"
+          id="fida"
+          placeholder="Fecha de Salida"
+          required
+        />
+        <div class="numeros">
+          <label for="numadultos">Adultos</label>
+          <select name="numadultos" id="numadultos" required>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <label for="numninios" id="nis">Niños</label>
+          <select name="numninios" id="numninios" required>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <input type="submit" value="Buscar" id="btnbuscar" />
+      </form>
+    </section>
+
+    <section class="video mid">
+      <iframe
+        src="https://www.youtube.com/embed/lJIDBgZNRkE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        class="wow animate__animated animate__fadeIn animate__delay-1s"
+      ></iframe>
+      <article
+        class="wow animate__animated animate__fadeInRight animate__delay-1s acerca"
+      >
+        <h1>Sobre nosotros</h1>
+        <br />
+        <p>
+          El principal beneficio es que al hospedarte en Hoteles Xcaret tienes
+          acceso ilimitado a los parques de Grupo Xcaret, así como al ferry de
+          Cancún a Isla Mujeres de Xcaret Xailing. La transportación redonda a
+          los parques y al aeropuerto es parte de este concepto único.
+        </p>
+        <br />
+        <a href="rectangule-out">Ver Más..</a>
+      </article>
+    </section>
+
+    <section class="cuadros mid">
+      <article
+        class="wow animate__animated animate__backInUp animate__delay-1s art"
+      >
+        <div class="ico">
+          <i class="fa-solid fa-user-clock"></i>
+        </div>
+        <h1>Recepción 24 horas</h1>
+        <p>
+          La recepción está abierta las 24 horas. Nuestros recepcionistas
+          informan a nuestros huéspedes de todas las instalaciones y eventos del
+          hotel, y se aseguran de que se haga todo lo posible para satisfacer
+          sus necesidades durante su estancia.
+        </p>
+      </article>
+      <article
+        class="wow animate__animated animate__backInLeft animate__delay-1s art"
+      >
+        <div class="ico">
+          <i class="fa-solid fa-spa"></i>
+        </div>
+        <h1>Spa Suites</h1>
+        <p>
+          Cada suite spa ha sido diseñada con rocas volcánicas, techos de paja
+          con un baño al aire libre, agregando una sensación verdaderamente
+          mágica y tranquila para su bienestar.
+        </p>
+      </article>
+      <article
+        class="wow animate__animated animate__backInRight animate__delay-1s art"
+      >
+        <div class="ico">
+          <i class="fa-solid fa-car"></i>
+        </div>
+        <h1>Servicio de Transporte</h1>
+        <p>
+          Disfrute de un cómodo viaje a nuestro lujoso resort spa y hotel desde
+          el aeropuerto reservando nuestros convenientes servicios de transporte
+          o limusinas privadas.
+        </p>
+      </article>
+      <article
+        class="wow animate__animated animate__backInDown animate__delay-1s art"
+      >
+        <div class="ico">
+          <i class="fa-solid fa-utensils"></i>
+        </div>
+        <h1>Restaurante a la carta</h1>
+        <p>
+          Nuestro restaurante está abierto para el desayuno, el almuerzo y la
+          cena y se especializa en cocinas gourmet de todo el mundo, con una
+          variedad que seguramente complacerá a cualquier paladar.
+        </p>
+      </article>
+    </section>
+
+    <section class="pllx mid" id="plllx">
+      <div class="imagen"></div>
+      <div class="texto">
+        <h1>Visite Chichen Itza</h1>
+        <br />
+        <p>
+          No solo visite nuestras playas, si no reserva también en su instancia
+          en nuestro hotel de un viaje a Chichen y disfrute del paseo de
+          nuestras zonas arqueologicas y de sus cenotes. <br /><br />
+          No pierda esta oportunidad y enamorese de nuestro lugar y terminando
+          el recorrido disfrute de una comida incluido en su viaje al llegar a
+          nuestra instalación y si quiere descansar nostros llevamos la comida
+          hacia su cuarto. <br /><br />
+          <span>¡¡¡NO ESPERE MÁS Y HAZ CLICK EN EL BOTÓN DE ABAJO!!!</span>
+        </p>
+        <br /><br />
+        <a href="#pllx" class="hvr-back-pulse">Reservar viaje</a>
+      </div>
+    </section>
+
+    <section class="promos mid" id="promos">
+      <div class="prom" id="prom">
+        <a href="#promos"> Promocion 1 </a>
+      </div>
+      <div class="prom" id="prom2">
+        <a href="#promos"> Promocion 2 </a>
+      </div>
+      <div class="prom" id="prom3">
+        <a href="#promos"> Promocion 3 </a>
+      </div>
+      <div class="btnmapa" id="btnmap">
+        <a href="#promos"> Ver Mapa del Lugar </a>
+      </div>
+    </section>
+
+    <section class="promocion" id="modal">
+      <div class="anuncio">
+        <header class="header">
+          <h2>Promocion1</h2>
+          <a href="#promos" id="cerrar">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </a>
+        </header>
+        <p>
+          Al venir con tu pareja por vacaciones, luna de miel, festejo.
+          <br />
+          le damos un servicio de descuento en todos nuestras atracciones y
+          turismo del 30% incluido en su paquete.
+        </p>
+        <img src="img/prom1.jpeg" alt="" />
+      </div>
+    </section>
+
+    <section class="promocion" id="modal2">
+      <div class="anuncio">
+        <header class="header">
+          <h2>Promocion1</h2>
+          <a href="#promos" id="cerrar2">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </a>
+        </header>
+        <p>
+          Al venir con tu pareja por vacaciones, luna de miel, festejo.
+          <br />
+          le damos un servicio de descuento en todos nuestras atracciones y
+          turismo del 30% incluido en su paquete.
+        </p>
+        <img src="img/prom2.jpeg" alt="" />
+      </div>
+    </section>
+
+    <section class="promocion" id="modal3">
+      <div class="anuncio">
+        <header class="header">
+          <h2>Promocion1</h2>
+          <a href="#promos" id="cerrar3">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </a>
+        </header>
+        <p>
+          Al venir con tu pareja por vacaciones, luna de miel, festejo.
+          <br />
+          le damos un servicio de descuento en todos nuestras atracciones y
+          turismo del 30% incluido en su paquete.
+        </p>
+        <img src="img/prom3.jpeg" alt="" />
+      </div>
+    </section>
+
+    <section class="promocion promap" id="modal4">
+      <div class="anuncio">
+        <header class="header">
+          <h2>Mapa del Xcaret</h2>
+          <a href="#promos" id="cerrar4">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </a>
+        </header>
+        <img src="img/mapaix.jpg" alt="" />
+      </div>
+    </section>
+
+    <footer>
+      <div class="cont">
+        <div class="horas">
+          <h1>horario</h1>
+          <p><span>lunes a viernes:</span> 6:00-22:00</p>
+          <p><span>sabado y domingo:</span> 6:00-02:00</p>
+          <p>Royal Villas © 2023. <a href="#">Privacy Policy</a></p>
+        </div>
+        <div class="lugar">
+          <h1>Ubicacion</h1>
+          <p><i class="fas fa-map-marker-alt"></i> Cancún, Yucatan.</p>
+          <p><i class="fas fa-phone"></i> +52 998-881-3834</p>
+        </div>
+        <div class="Suscribirse">
+          <h1>Suscribite</h1>
+          <input type="text" placeholder="Escriba su cooreo" id="txtsus" />
+          <input id="sus" type="submit" value="Suscribirse" />
+        </div>
+      </div>
+    </footer>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/index.js"></script>
+    <script src="lib/responsiveslides.min.js"></script>
+    <script src="lib/wow.min.js"></script>
+  </body>
+</html>
