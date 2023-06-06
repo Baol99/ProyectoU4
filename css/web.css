@@ -374,6 +374,12 @@ header {
     color: rgb(112, 3, 3);
 }
 
+.promocion .anuncio p a {
+    padding: 10px 20px;
+    background-color: #e4c288;
+    border-radius: 25px;
+}
+
 .promocion .anuncio img {
     margin: 10px 120px;
     width: 350px;
