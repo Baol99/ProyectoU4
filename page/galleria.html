@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/galleria.css" />
     <link rel="stylesheet" href="../css/movil.css" />
     <link rel="stylesheet" href="../css/responsiveslides.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
     <script
       src="https://kit.fontawesome.com/74d6ebe007.js"
       crossorigin="anonymous"
@@ -14,9 +15,14 @@
     <title>Galleria</title>
   </head>
   <body>
-    <i id="subir" class="fas fa-arrow-circle-up"></i>
+    <i
+      id="subir"
+      class="wow animate__animated animate__bounceIn animate__delay-3s fas fa-arrow-circle-up"
+    ></i>
     <header class="hd" id="header">
-      <div class="redes">
+      <div
+        class="wow animate__animated animate__backInLeft animate__delay-1s redes"
+      >
         <p>Follow Us:</p>
         <a href="https://www.instagram.com/hotelxcaretmexico/" target="_blank">
           <i class="fa-brands fa-instagram" id="inst"></i>
@@ -28,7 +34,7 @@
           <i class="fa-brands fa-twitter" id="tt"></i>
         </a>
       </div>
-      <figure class="logo">
+      <figure class="wow animate__animated animate__fadeIn animate__delay-1s logo">
         <a href="../index.html">
           <img src="../img/hoteles-logos.svg" alt="" />
         </a>
@@ -48,7 +54,7 @@
         </ul>
       </nav>
     </header>
-    <nav class="menu">
+    <nav class="wow animate__animated animate__backInRight animate__delay-1s menu">
       <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="#Acerca">About Us</a></li>
@@ -497,18 +503,24 @@
 
     <footer>
       <div class="cont">
-        <div class="horas">
+        <div
+          class="wow animate__animated animate__backInLeft animate__delay-1s horas"
+        >
           <h1>horario</h1>
           <p><span>lunes a viernes:</span> 6:00-22:00</p>
           <p><span>sabado y domingo:</span> 6:00-02:00</p>
           <p>Royal Villas © 2023. <a href="#">Privacy Policy</a></p>
         </div>
-        <div class="lugar">
+        <div
+          class="wow animate__animated animate__fadeIn animate__delay-1s lugar"
+        >
           <h1>Ubicacion</h1>
           <p><i class="fas fa-map-marker-alt"></i> Cancún, Yucatan.</p>
           <p><i class="fas fa-phone"></i> +52 998-881-3834</p>
         </div>
-        <div class="Suscribirse">
+        <div
+          class="wow animate__animated animate__backInRight animate__delay-1s Suscribirse"
+        >
           <h1>Suscribite</h1>
           <input type="text" placeholder="Escriba su cooreo" id="txtsus" />
           <input id="sus" type="submit" value="Suscribirse" />
@@ -518,6 +530,7 @@
     <script src="../lib/index.js"></script>
     <script src="../lib/jquery.min.js"></script>
     <script src="../lib/jquery.tinycarousel.min.js"></script>
+    <script src="../lib/wow.min.js"></script>
     <script>
       $("#btnmenu").click(function () {
         $("#navMenu").toggleClass("abrirmenu");
